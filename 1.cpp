@@ -56,11 +56,13 @@ void other_Callback(int , void* )
 
 int main()
 {
-  Mat im0 = cv::imread("../5.jpg_l.jpg");
-  Mat im1 = cv::imread("../5.jpg_r.jpg");
+  //l
+  Mat im0 = cv::imread("../0.jpg_l.jpg");
+  //r
+  Mat im1 = cv::imread("../0.jpg_r.jpg");
 
-   cvtColor(im0,grayLeft,COLOR_BGR2GRAY);
-   cvtColor(im1,grayRight,COLOR_BGR2GRAY);
+   cvtColor(im1,grayLeft,COLOR_BGR2GRAY);
+   cvtColor(im0,grayRight,COLOR_BGR2GRAY);
    grayLeft_h=grayLeft;
     grayRight_h=grayRight;
     setUniquenessRatio=10;
